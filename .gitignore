@@ -3,3 +3,11 @@
 ################################################################################
 
 /Datacubist/Datacubist.Common/obj/Debug
+/.vs/BIMTools/v15/Server/sqlite3
+/Datacubist/Datacubist.ModelViews/obj/Debug
+/Datacubist/Datacubist.Palettes/obj/Debug
+/Datacubist/Datacubist.Workspaces/obj/Debug
+/Datacubist/ModelCompare/obj/Debug
+/BIMTools.v12.suo
+/Datacubist/ModelCompare/bin/Debug
+/.vs/BIMTools/v15

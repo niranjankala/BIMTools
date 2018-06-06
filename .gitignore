@@ -21,3 +21,8 @@
 /Datacubist/Datacubist.Workspaces/obj/x64/Debug
 /Datacubist/ModelCompare/bin/x64/Debug
 /Datacubist/ModelCompare/obj/x64/Debug
+/OpenStudio/OpenStudioMeasuresViewer/bin/Debug
+/OpenStudio/OpenStudioMeasuresViewer/obj/Debug
+/packages/Newtonsoft.Json.11.0.2
+/packages/Newtonsoft.Json.10.0.3
+/Shared/BIMTools.Shared/obj/Debug

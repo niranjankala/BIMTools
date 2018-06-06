@@ -4,7 +4,7 @@ using System.Text;
 using IfcIdLib = Datacubist.simplebim.Developer.Core.Libraries.DC.Classifications;
 using Datacubist.simplebim.Developer.Core.DataCube.DataModelView;
 using System.Diagnostics;
-
+using Datacubist.Common;
 
 namespace ModelViews
 {
@@ -15,7 +15,7 @@ namespace ModelViews
 
         public ModelViewDefault()
         {
-            _defaultWorkspaceGuid = Workspace_Keys.workspaceDesignAlt;
+            _defaultWorkspaceGuid = Workspace_Keys.WorkspaceDashboard;
         }
 
         #region "IModelViewModule implementation"
@@ -32,12 +32,12 @@ namespace ModelViews
 
         public string Name
         {
-            get { return "Sim Model View"; }
+            get { return "Model View"; }
         }
 
         public string Description
         {
-            get { return "Model View for Sim data"; }
+            get { return "Model View for data"; }
         }
 
         public System.Drawing.Bitmap Image

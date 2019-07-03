@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{73250672-334E-48A0-B427-E460B7B6458E}</ProjectGuid>
+    <ProjectGuid>{B615C3A9-035A-4307-9C61-F7EA1C30C468}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>BIMTools.BiMserver.BiMserverClient</RootNamespace>
-    <AssemblyName>BiMserverClient</AssemblyName>
+    <RootNamespace>BIMTools.Xbim.XbimExplorer</RootNamespace>
+    <AssemblyName>XbimExplorer</AssemblyName>
     <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,9 +33,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -49,16 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ApplictionEvents.cs">
+    <Compile Include="IFCAnalyser.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ApplictionEvents.Designer.cs">
-      <DependentUpon>ApplictionEvents.cs</DependentUpon>
+    <Compile Include="IFCAnalyser.Designer.cs">
+      <DependentUpon>IFCAnalyser.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="ApplictionEvents.resx">
-      <DependentUpon>ApplictionEvents.cs</DependentUpon>
+    <EmbeddedResource Include="IFCAnalyser.resx">
+      <DependentUpon>IFCAnalyser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -70,7 +67,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -207,6 +207,6 @@ namespace XbimInvestigator.Common
             ApplicationIdentifier = "XbimInvestigator",
             ApplicationVersion = "1.0"            
         };
-        public XbimEditorCredentials ApplicationEditorCredentials { get ; set; }
+        public XbimEditorCredentials ApplicationEditorCredentials { get { return editor; } set { editor = value; } }
     }
 }

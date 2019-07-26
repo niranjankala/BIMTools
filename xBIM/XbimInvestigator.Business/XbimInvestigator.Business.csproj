@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="clipper_library, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\com.angusj.Clipper.6.4.2\lib\net40\clipper_library.dll</HintPath>
+    </Reference>
     <Reference Include="Esent.Interop, Version=1.9.4.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\..\packages\ManagedEsent.1.9.4\lib\net40\Esent.Interop.dll</HintPath>
     </Reference>
@@ -173,8 +176,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Parameters.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\IfcUtils.cs" />
+    <Compile Include="XLine.cs" />
+    <Compile Include="XModelCreator.cs" />
+    <Compile Include="XPoint3D.cs" />
+    <Compile Include="XPolygon.cs" />
+    <Compile Include="XPreviewBase.cs" />
+    <Compile Include="XPreviewBuilding.cs" />
+    <Compile Include="XPreviewBuildingStory.cs" />
+    <Compile Include="XPreviewContainer.cs" />
+    <Compile Include="XPreviewElement.cs" />
+    <Compile Include="XPreviewSlab.cs" />
+    <Compile Include="XPreviewSpace.cs" />
+    <Compile Include="XPreviewWall.cs" />
+    <Compile Include="XTreeNode.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

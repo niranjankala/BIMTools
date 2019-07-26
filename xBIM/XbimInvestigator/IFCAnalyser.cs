@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using Xbim.Ifc;
 using Xbim.Ifc2x3.Interfaces;
 using Xbim.IO;
+using XbimInvestigator.Business;
 
 namespace XbimInvestigator
 {
@@ -59,6 +60,8 @@ namespace XbimInvestigator
                     XbimInvestigator.Common.ApplicationManager.Instance.CurrentModel
                          = IfcStore.Open(openFileDialog.FileName);
                     PopulateControls();
+                    IXModelCreator creator = new XModelCreator();
+                    creator.CreateOBJFile(XbimInvestigator.Common.ApplicationManager.Instance.CurrentModel,System.IO.Path.GetFileNameWithoutExtension(openFileDialog.FileName));
                 }
             }
 
@@ -154,7 +157,5 @@ namespace XbimInvestigator
         //        indent += "  ";
         //    return indent;
         //}
-
-
     }
 }

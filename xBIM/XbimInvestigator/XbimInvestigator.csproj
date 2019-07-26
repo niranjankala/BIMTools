@@ -164,6 +164,10 @@
       <Project>{91fae66f-d31a-4352-a2f7-9be56f54ef21}</Project>
       <Name>BIMTools.Shared</Name>
     </ProjectReference>
+    <ProjectReference Include="..\XbimInvestigator.Business\XbimInvestigator.Business.csproj">
+      <Project>{301ed9f4-4636-4da2-9444-c68fe0d7a200}</Project>
+      <Name>XbimInvestigator.Business</Name>
+    </ProjectReference>
     <ProjectReference Include="..\XbimInvestigator.Common\XbimInvestigator.Common.csproj">
       <Project>{7b90d204-8369-4601-9ddf-423b58163ba9}</Project>
       <Name>XbimInvestigator.Common</Name>
